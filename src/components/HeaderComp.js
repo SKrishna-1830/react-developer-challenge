@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Outlet, Link } from "react-router-dom";
 
-function Header() {
+function HeaderComp() {
     return (
         <>
             <Container fluid>
@@ -22,4 +22,4 @@ function Header() {
         </>
     )
 }
-export default Header;
+export default HeaderComp;

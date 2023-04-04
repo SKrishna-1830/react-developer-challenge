@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Graphs from './pages/Graphs';
-import Home from './pages/Home';
+import HomePage from './pages/HomePage';
+import GraphsPage from './pages/GraphsPage';
 
 function App() {
   return (
 
     <BrowserRouter>
       <Routes>
-        <Route path="*" element={<Home />} />
-        <Route path="/graph" element={<Graphs />} />
+        <Route path="*" element={<HomePage />} />
+        <Route path="/graph" element={<GraphsPage />} />
       </Routes>
     </BrowserRouter>
   );

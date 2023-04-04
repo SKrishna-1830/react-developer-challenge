@@ -1,6 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import AddingStocks from '../components/AddingStocks';
-import Header from '../components/Header';
+import Header from '../components/HeaderComp';
 
 function Home() {
     return (

@@ -1,9 +1,9 @@
 import Container from 'react-bootstrap/Container';
 import { useEffect, useState } from 'react';
-import Header from '../components/Header';
 import StocksGraph from '../components/StocksGraph';
+import HeaderComp from '../components/HeaderComp';
 
-function Graphs() {
+function GraphsPage() {
     const [stocks, setStocks] = useState([])
     const [selected, setSelected] = useState('')
     const stockslist = localStorage.getItem('stockslist')
@@ -16,7 +16,7 @@ function Graphs() {
     return (
         <>
             <Container fluid>
-                <Header />
+                <HeaderComp />
 
                 <Container>
                     <br />
@@ -36,4 +36,4 @@ function Graphs() {
         </>
     )
 }
-export default Graphs;
+export default GraphsPage;
